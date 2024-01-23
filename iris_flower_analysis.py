@@ -61,3 +61,4 @@ print(classification_report(Y_test, prediction2))
 X_new = np.array([[3, 2, 1, 0.2], [4.9, 2.2, 3.8, 1.1], [5.3, 2.5, 4.6, 1.9]])
 prediction = model_svc.predict(X_new)
 print("prediction of species : {}".format(prediction))
+#print final output of our analysis
