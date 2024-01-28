@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-# %matplotlib inline
+
 
 df = pd.read_csv('/content/IRIS.csv')
 df.head()
@@ -46,7 +46,6 @@ for i in range(len(prediction1)):
   print(Y_test[i], prediction1[i])
 
 # Decision tree classifier
-
 from sklearn.tree import DecisionTreeClassifier
 model_DTC = DecisionTreeClassifier()
 model_DTC.fit(X_train, Y_train)
@@ -61,4 +60,5 @@ print(classification_report(Y_test, prediction2))
 X_new = np.array([[3, 2, 1, 0.2], [4.9, 2.2, 3.8, 1.1], [5.3, 2.5, 4.6, 1.9]])
 prediction = model_svc.predict(X_new)
 print("prediction of species : {}".format(prediction))
+
 #print final output of our analysis
